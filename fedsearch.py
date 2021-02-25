@@ -64,7 +64,6 @@ class api:
             for result in r:
                 email, password, ip, token, database = result['email'], result['password'], result['ip'], result['token'], result['database']
                 results.append(f'''
-                   \033[31m______
 \033[31m==================[\033[0mResult\033[31m]==================\033[0m
 
 Email       :   {email}        

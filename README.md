@@ -10,8 +10,12 @@ FedSearch is a Database search API for free but this is for the **PAID** API Ver
 This project is being worked on live so have fun looking at it 
 
 
-
+Workers :
 - HellSec
+- NanoSec
+- Scoot
+- Cruel
+- George
 
 ----------------------------------------------------------------------------------
 

@@ -78,7 +78,7 @@ API_KEY = ' '
 api = fedsearch.api()
 
 try:
-    # Output Count Results
+    # Output FedSearch Version
     version = api.version(API_KEY)
     print(version)
 except Exception as e:

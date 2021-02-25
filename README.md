@@ -1,12 +1,12 @@
-# FedSearch API
-A simple API for simple people
-
 ----------------------------------------------------------------------------------
 
 # Info
 
-FedSearch is a Database search API for free but this is for the paid API Version
+*A simple API for simple people*
+FedSearch is a Database search API for free but this is for the **PAID** API Version
+This project is being worked on live so have fun looking at it 
 
+- HellSec
 
 ----------------------------------------------------------------------------------
 

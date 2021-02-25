@@ -3,11 +3,11 @@ import requests, json
 class api:
     def __init__(self):
         '''
-        Fedsearch v1 by HellSec And Nano
+        Fedsearch API by HellSec
         '''
 
     def search(self, key, query):
-        r = requests.get('https://fedsearch.cf/API/search_api.php', headers={'key': key, 'search': query, 'submit': ''}).text
+        r = requests.post('https://fedsearch.cf/API/search_api.php', headers={'key': key, 'search': query, 'submit': ''}).text
         if 'DOCTYPE' in r:
             error = f'\033[31m[Error]\033[0m Cloudflare Ratelimit'
             return(error)
@@ -21,7 +21,7 @@ class api:
             return(r)
 
     def records(self, key):
-        r = requests.get('https://fedsearch.cf/API/records.php', headers={'key': key, 'submit': ''}).text
+        r = requests.post('https://fedsearch.cf/API/records.php', headers={'key': key, 'submit': ''}).text
         if 'DOCTYPE' in r:
             error = f'\033[31m[Error]\033[0m Cloudflare Ratelimit'
             return(error)
@@ -35,7 +35,7 @@ class api:
             return(r)
 
     def version(self, key):
-        r = requests.get('https://fedsearch.cf/API/version.php', headers={'key': key, 'submit': ''}).text
+        r = requests.post('https://fedsearch.cf/API/version.php', headers={'key': key, 'submit': ''}).text
         if 'DOCTYPE' in r:
             error = f'\033[31m[Error]\033[0m Cloudflare Ratelimit'
             return(error)
